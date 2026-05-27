@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>send me a messsage</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 700px;
+            background-color: white;
+            padding: 90px;
+            border-radius: 90px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input, textarea{
+            width: 700px;
+            height: 65px;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+            font-size: 20px;
+            box-sizing:border-box;
+        }
+        .row{
+            display: flex;
+            gap:20px;
+            margin-top: 30px;
+        }
+        .row input{
+            width: 50%;
+        }
+        textarea{
+            height: 150px;
+            width: 700px;
+            margin-top: 30px;
+        }
+        
+        .btn{
+            background-color: rgb(62, 158, 217);
+            color: rgb(255, 255, 253);
+            border-radius: 30px;
+            padding: 15px ;
+            font-size: 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <h1>Send me a messsage</h1>
+    
+    <input type="text" placeholder="Enter your Name/Company*">
+    <div class="row">
+    <input type="text" placeholder="Enter your Email*" >
+    <input type="text" placeholder="Enter Phone Number*"></div>
+    <textarea placeholder="Write Message...."></textarea>
+    
+    <button class="btn">Send Message</button>
+    </div>
+</body>
+</html>
