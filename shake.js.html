@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let btn = document.getElementById("btn");
+
+btn.addEventListener("click", function() {
+  btn.style.transform = "translateX(-5px)";
+
+  setTimeout(() => {
+    btn.style.transform = "translateX(5px)";                                                             OUTPUT
+  }, 100);
+
+  setTimeout(() => {
+    btn.style.transform = "translateX(0)";
+  }, 200);
+});
+
+    </script>
+</head>
+<body bgcolor="gray">
+    <h1>JavaScript</h1>
+    <p>It is a lightweight cross platform programming to create dynamic and interactive element on websites.</p>
+    <button id="btn">Learn more</button>
+
+    
+</body>
+</html>

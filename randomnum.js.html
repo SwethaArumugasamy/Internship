@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generate() {
+            let chars = "abcdefghijklmnopqrstuvwxyz123456789";
+             let pass = "";
+         for (let i = 0; i < 6; i++) {
+              pass += chars[Math.floor(Math.random() * chars.length)];                                               OUTPUT  }  document.getElementById("pass").innerHTML = pass;
+    }
+    </script>
+</head>
+<body bgcolor="lightgray">
+    <center>
+    <h4>Password generator</h4>
+    <button onclick="generate()">Generate Password</button>
+    <p id="pass"></p>
+    </center>
+    
+</body>
+</html>
