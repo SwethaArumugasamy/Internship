@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add() {
+             let task = document.getElementById("task").value;                                                           OUTPUT  let li = document.createElement("li");  li.textContent = task;  document.getElementById("list").appendChild(li);  document.getElementById("task").value = "";
+
+        }
+    </script>
+</head>
+<body bgcolor="lightgray">
+    <center>
+    <input type="text" id="task">
+    <button onclick="add()">Add</button>
+    <ul id="list"></ul>
+    </center>
+</body>
+</html>

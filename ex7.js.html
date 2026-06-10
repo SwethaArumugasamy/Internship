@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gen() {
+             let n = Math.floor(Math.random() * 100);
+              document.getElementById("num").innerHTML = n;        
+
+        }
+    </script>
+</head>
+<body bgcolor="lightblue">
+    <center>
+    <h3> Here is your Lucky number</h3>
+    <button onclick="gen()">Generate</button>
+    <p id="num"></p>
+    </center>
+    
+</body>
+</html>
